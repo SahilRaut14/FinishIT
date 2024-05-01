@@ -76,10 +76,9 @@ class HomeScreenState extends State<HomeScreen>
             ),
             ElevatedButton(
               style: ElevatedButton.styleFrom(
-                backgroundColor: Colors.blueAccent, // Background color
+                backgroundColor: Colors.blueAccent,
                 shape: RoundedRectangleBorder(
-                  borderRadius:
-                      BorderRadius.circular(30), // Rounded border radius
+                  borderRadius: BorderRadius.circular(30),
                 ),
               ),
               onPressed: () {
@@ -90,13 +89,12 @@ class HomeScreenState extends State<HomeScreen>
                 style: TextStyle(fontSize: 18),
               ),
             ),
-            const SizedBox(height: 20), // SizedBox to add space between buttons
+            const SizedBox(height: 20),
             ElevatedButton(
               style: ElevatedButton.styleFrom(
-                backgroundColor: Colors.blueAccent, // Background color
+                backgroundColor: Colors.blueAccent,
                 shape: RoundedRectangleBorder(
-                  borderRadius:
-                      BorderRadius.circular(30), // Rounded border radius
+                  borderRadius: BorderRadius.circular(30),
                 ),
               ),
               onPressed: () {

@@ -80,7 +80,6 @@ class _SignupPageState extends State<SignupPage> {
                   try {
                     await _auth.createUserWithEmailAndPassword(
                         email: email, password: password);
-                    // Navigator.pushNamed(context, LoginScreen.id);
                   } catch (e) {
                     print(e);
                   }

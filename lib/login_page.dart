@@ -50,7 +50,6 @@ class _LoginPageState extends State<LoginPage> {
                   textAlign: TextAlign.center,
                   keyboardType: TextInputType.emailAddress,
                   onChanged: (value) {
-                    //Do something with the user input.
                     email = value;
                   },
                   decoration: kTextFieldDecoration.copyWith(
@@ -62,7 +61,6 @@ class _LoginPageState extends State<LoginPage> {
                   textAlign: TextAlign.center,
                   obscureText: true,
                   onChanged: (value) {
-                    //Do something with the user input.
                     password = value;
                   },
                   decoration: kTextFieldDecoration.copyWith(
@@ -73,16 +71,13 @@ class _LoginPageState extends State<LoginPage> {
               RoundedButton(
                 color: Colors.lightBlueAccent,
                 label: 'log in',
-                onPress:
-                    // Navigator.pushNamed(context, LoginScreen.id);
-                    () async {
+                onPress: () async {
                   setState(() {
                     spinner = true;
                   });
                   try {
                     await _auth.signInWithEmailAndPassword(
                         email: email, password: password);
-                    // Navigator.pushNamed(context, LoginScreen.id);
                   } catch (e) {
                     print(e);
                   }
@@ -90,7 +85,6 @@ class _LoginPageState extends State<LoginPage> {
                     spinner = false;
                   });
                   navigate();
-                  // Navigator.pushNamed(context, ChatScreen.id);
                 },
               ),
             ],

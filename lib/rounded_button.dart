@@ -31,10 +31,3 @@ class RoundedButton extends StatelessWidget {
     );
   }
 }
-
-// total weight for the font size are relatively equallly from each size of the screen
-//  2>> try for Other animations instead of default flutter animations.
-// 3>> use typewriter for the many of the usage for the details.
-// 4.. wait for the ticker to get eover!
-// 5>>=----- 
-// lists{ hash 5 $currencya=@ apikey=34678.lat= 12.78+long= 13.35}

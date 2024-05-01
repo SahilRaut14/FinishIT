@@ -105,16 +105,13 @@ class TaskList extends StatelessWidget {
       },
       children: tasks.map((task) {
         return TaskTile(
-          key: ValueKey(task), // Use ValueKey to identify tasks uniquely
           taskTitle: task.name,
           isChecked: task.isDone,
           checkBoxCallBack: (isChecked) {
             commonBox.updateTask(task);
-            // Implement your callback logic here
           },
           longPressCallBack: () {
             commonBox.deleteTask(task);
-            // Implement your callback logic here
           },
           description: task.description,
           endDate: task.endDate,
